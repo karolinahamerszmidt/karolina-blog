@@ -1,38 +1,124 @@
-.App {
+.kartka {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pasek {
+  background-color: beige;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pasek > div:hover {
+  opacity: 0.5;
+}
+
+.pasek > div {
+  cursor: pointer;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.baner {
+  background-color: coral;
+  height: 500px;
+}
+.banerImage {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.padding {
+  background-color: white;
+  height: 50px;
+}
+
+.posty {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post {
+  height: 600px;
+  width: 300px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.post:hover > .postImage {
+  opacity: 0.5;
+}
+
+.postImage {
+  height: 400px;
+  width: 100%;
+  background-color: bisque;
+}
+
+.postImageOne {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.tytul {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.data {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.socialMedia {
+  font-size: 36px;
+  color: grey;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.socialMedia > svg {
+  margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.stopka {
+  background-color: black;
+  height: 70px;
+}
+
+.copyright {
+  font-size: 18px;
+  text-align: right;
+  padding-top: 30px;
+  margin-right: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.podstronaTytul {
+  font-size: 38px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Merriweather", serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.podstronaTekst {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  padding-bottom: 40px;
+}
+
+.podstronaData {
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 20px;
+  color: grey;
 }
