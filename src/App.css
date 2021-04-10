@@ -4,6 +4,10 @@
   margin-right: auto;
 }
 
+.kartkaAboutMe {
+  background-color: beige;
+}
+
 .pasek {
   background-color: beige;
   height: 50px;
@@ -34,7 +38,6 @@
   width: 100%;
 }
 .padding {
-  background-color: white;
   height: 50px;
 }
 
@@ -121,4 +124,41 @@
   text-align: center;
   padding-bottom: 20px;
   color: grey;
+}
+
+.aboutMeBaner {
+  height: 500px;
+  display: flex;
+}
+
+.prawyBaner {
+  height: 500px;
+  width: 50%;
+}
+
+.lewyBaner {
+  height: 500px;
+  width: 50%;
+}
+
+.karolinaAboutMePic {
+  object-fit: cover;
+  object-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.imieNazwisko {
+  font-size: 38px;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Merriweather", serif;
+}
+
+.imieNazwiskoTekst {
+  font-size: 19px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }

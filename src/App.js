@@ -11,6 +11,7 @@ import {
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import karolina from "./karolina_aboutme.jpg";
 
 const Post = ({ tytul, data, zdjecie, onClick }) => (
   <div onClick={onClick} className="post">
@@ -32,19 +33,21 @@ const Podstrona = ({ tytul, data, zdjecie, tekst }) => (
 function App() {
   const [strona, ustawStrone] = useState("stronaGlowna");
   return (
-    <div className="kartka">
+    <div className={strona === "aboutMe" ? "kartka kartkaAboutMe" : "kartka"}>
       <div className="pasek">
         {" "}
         <div onClick={() => ustawStrone("stronaGlowna")} className="logo">
           MASHCRISP
         </div>
-        <div>About me</div>
+        <div onClick={() => ustawStrone("aboutMe")}>About me</div>
         <div>Blog</div>
         <div>Contact</div>
       </div>
-      <div className="baner">
-        <img src={baner} className="banerImage" />
-      </div>
+      {strona !== "aboutMe" ? (
+        <div className="baner">
+          <img src={baner} className="banerImage" />
+        </div>
+      ) : null}
       <div className="padding"></div>
       <div>
         {strona === "stronaGlowna" ? (
@@ -119,6 +122,33 @@ function App() {
               publishing software like Aldus PageMaker including versions of
               Lorem Ipsum."
           />
+        ) : null}
+
+        {strona === "aboutMe" ? (
+          <div className="aboutMeBaner">
+            <div className="lewyBaner">
+              <img className="karolinaAboutMePic" src={karolina} />
+            </div>
+            <div className="prawyBaner">
+              <div className="imieNazwisko">Karolina Hamerszmidt</div>
+              <div className="imieNazwiskoTekst">
+                In tegenstelling tot wat algemeen aangenomen wordt is Lorem
+                Ipsum niet zomaar willekeurige tekst. het heeft zijn wortels in
+                een stuk klassieke latijnse literatuur uit 45 v.Chr. en is dus
+                meer dan 2000 jaar oud. Richard McClintock, een professor latijn
+                aan de Hampden-Sydney College in Virginia, heeft één van de meer
+                obscure latijnse woorden, consectetur, uit een Lorem Ipsum
+                passage opgezocht, en heeft tijdens het zoeken naar het woord in
+                de klassieke literatuur de onverdachte bron ontdekt. Lorem Ipsum
+                komt uit de secties 1.10.32 en 1.10.33 van "de Finibus Bonorum
+                et Malorum" (De uitersten van goed en kwaad) door Cicero,
+                geschreven in 45 v.Chr. Dit boek is een verhandeling over de
+                theorie der ethiek, erg populair tijdens de renaissance. De
+                eerste regel van Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                komt uit een zin in sectie 1.10.32.
+              </div>
+            </div>
+          </div>
         ) : null}
       </div>
 
