@@ -1,9 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
-import baner from "./baner.jpg";
-import notatki from "./notatki.jpg";
-import girl from "./girl.jpg";
-import ubrania from "./ubrania.jpg";
+import baner from "./baner_small.jpg";
+import notatki from "./notatki_small.jpg";
+import girl from "./girl_small.jpg";
+import ubrania from "./ubrania_small.jpg";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,9 +11,9 @@ import {
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import karolina from "./karolina_aboutme.jpg";
-import biuro from "./biuro.jpg";
-import bed from "./bed.jpg";
+import karolina from "./karolina_aboutme_small.jpg";
+import biuro from "./biuro_small.jpg";
+import bed from "./bed_small.jpg";
 
 const Post = ({ tytul, data, zdjecie, onClick }) => (
   <div onClick={onClick} className="post">
@@ -37,14 +37,33 @@ function App() {
   return (
     <div className={strona === "aboutMe" ? "kartka kartkaAboutMe" : "kartka"}>
       <div className="pasek">
-        {" "}
-        <div onClick={() => ustawStrone("stronaGlowna")} className="logo">
-          MASHCRISP
+        <div className="menu" onClick={() => ustawStrone("stronaGlowna")}>
+          Home
         </div>
-        <div onClick={() => ustawStrone("aboutMe")}>About me</div>
-        <div>Blog</div>
-        <div>Contact</div>
+        <div className="menu" onClick={() => ustawStrone("aboutMe")}>
+          About
+        </div>
+        <div className="menu">Contact</div>
+        <div className="pasekSocialMedia">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCxWIPx8fsoJMLBCY1e4BGpA"
+          >
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
+          <a target="_blank" href="https://www.instagram.com/hamerszmidt/">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/karolina.hamerszmidt/"
+          >
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+        </div>
       </div>
+
+      <div className="logoBaner">MASHCRISP</div>
       {strona !== "aboutMe" ? (
         <div className="baner">
           <img src={baner} className="banerImage" />
@@ -173,7 +192,7 @@ function App() {
                 Karolina Hamerszmidt
               </div>
               <div className="drugaPodStrona__aboutMeTekst">
-                Proud Varsavian girl, curently living in The Netherlands
+                Proud Varsavian girl, currently living in The Netherlands
               </div>
             </div>
             <div className="drugaPodStrona__socialMedia">

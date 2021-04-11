@@ -9,23 +9,51 @@
 }
 
 .pasek {
-  background-color: beige;
+  background-color: #d5bbb5;
   height: 50px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .pasek > div:hover {
   opacity: 0.5;
 }
 
-.pasek > div {
+.menu {
   cursor: pointer;
+  margin: 7px;
+}
+
+.pasekSocialMedia {
+  margin-left: auto;
+}
+
+.pasekSocialMedia > a,
+.pasekSocialMedia > a:link,
+.pasekSocialMedia > a:visited,
+.pasekSocialMedia > a:active,
+.pasekSocialMedia > a:hover {
+  margin: 5px;
+  color: inherit;
+}
+
+.pasekSocialMedia > a:hover {
+  opacity: 0.5;
 }
 
 .logo {
   font-weight: bold;
+}
+
+.logoBaner {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 74px;
+  font-family: "LoveloBlack";
 }
 
 .baner {
@@ -92,7 +120,7 @@
 }
 
 .stopka {
-  background-color: black;
+  background-color: #505a5b;
   height: 70px;
 }
 
