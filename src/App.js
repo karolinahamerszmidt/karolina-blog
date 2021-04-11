@@ -12,6 +12,8 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import karolina from "./karolina_aboutme.jpg";
+import biuro from "./biuro.jpg";
+import bed from "./bed.jpg";
 
 const Post = ({ tytul, data, zdjecie, onClick }) => (
   <div onClick={onClick} className="post">
@@ -151,6 +153,49 @@ function App() {
           </div>
         ) : null}
       </div>
+
+      {strona === "stronaGlowna" ? (
+        <div className="drugaPodStrona">
+          <div className="drugaPodStrona__zdjecie">
+            <div className="drugaPodStrona__zdjeciePic">
+              <img src={biuro} className="drugaPodStrona__zdjeciePicPic" />
+            </div>
+            <div className="drugaPodStrona__zdjeciePic">
+              <img src={bed} className="drugaPodStrona__zdjeciePicPic" />
+            </div>
+          </div>
+          <div className="drugaPodStrona__tekst">
+            <div className="drugaPodStrona__profilePic">
+              <img src={karolina} className="drugaPodStrona__profilePicImg" />
+            </div>
+            <div className="drugaPodStrona__aboutMe">
+              <div className="drugaPodStrona__aboutMeTytul">
+                Karolina Hamerszmidt
+              </div>
+              <div className="drugaPodStrona__aboutMeTekst">
+                Proud Varsavian girl, curently living in The Netherlands
+              </div>
+            </div>
+            <div className="drugaPodStrona__socialMedia">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UCxWIPx8fsoJMLBCY1e4BGpA"
+              >
+                <FontAwesomeIcon icon={faYoutube} />
+              </a>
+              <a target="_blank" href="https://www.instagram.com/hamerszmidt/">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/karolina.hamerszmidt/"
+              >
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
+            </div>
+          </div>
+        </div>
+      ) : null}
 
       <div className="socialMedia">
         <FontAwesomeIcon icon={faYoutube} />
