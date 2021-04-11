@@ -230,16 +230,16 @@
   border-radius: 50%;
 }
 .drugaPodStrona__aboutMe {
-  font-family: "Merriweather", serif;
 }
 
 .drugaPodStrona__aboutMeTytul {
   margin: 30px 25px 10px 25px;
   font-size: 18px;
+  font-family: "Merriweather", serif;
 }
 
 .drugaPodStrona__aboutMeTekst {
-  margin: 30px 25px 10px 25px;
+  margin: 10px 25px 10px 25px;
   font-size: 14px;
 }
 
@@ -259,4 +259,26 @@
 
 .drugaPodStrona__socialMedia > a:hover {
   opacity: 0.5;
+}
+
+.bottomText {
+  display: flex;
+}
+
+.bottomTextKolumnaL {
+  width: 100%;
+}
+
+.bottomText_sayHello {
+}
+
+.bottomTextKolumnaS {
+  width: 100%;
+  text-align: center;
+  font-family: "LoveloBlack";
+  font-size: 26px;
+}
+
+.bottomTextKolumnP {
+  width: 100%;
 }

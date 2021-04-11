@@ -14,6 +14,7 @@ import {
 import karolina from "./karolina_aboutme_small.jpg";
 import biuro from "./biuro_small.jpg";
 import bed from "./bed_small.jpg";
+import { PersonalSkills } from "./PersonalSkills";
 
 const Post = ({ tytul, data, zdjecie, onClick }) => (
   <div onClick={onClick} className="post">
@@ -212,9 +213,19 @@ function App() {
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
             </div>
+            <PersonalSkills />
           </div>
         </div>
       ) : null}
+
+      <div className="bottomText">
+        <div className="bottomTextKolumnaL">
+          <div className="bottomText_sayHello"> Say hello</div>
+          <div className="bottomTextEmail">karolina@hamerszmidt.eu</div>
+        </div>
+        <div className="bottomTextKolumnaS">MASCHCRISP</div>
+        <div className="bottomTextKolumnP"></div>
+      </div>
 
       <div className="socialMedia">
         <FontAwesomeIcon icon={faYoutube} />
