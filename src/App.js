@@ -15,6 +15,9 @@ import karolina from "./karolina_aboutme_small.jpg";
 import biuro from "./biuro_small.jpg";
 import bed from "./bed_small.jpg";
 import { PersonalSkills } from "./PersonalSkills";
+import uroda from "./uroda.jpg";
+import travel from "./travel.jpg";
+import lifestale from "./lifestale.jpg";
 
 const Post = ({ tytul, data, zdjecie, onClick }) => (
   <div onClick={onClick} className="post">
@@ -65,6 +68,14 @@ function App() {
       </div>
 
       <div className="logoBaner">MASHCRISP</div>
+      {strona === "aboutMe" ? (
+        <div className="aboutMe__banerTekstAbout">About</div>
+      ) : null}
+      {strona === "aboutMe" ? (
+        <div className="aboutMe__banerTekst">
+          Serdecznie witam na moim blogu!{" "}
+        </div>
+      ) : null}
       {strona !== "aboutMe" ? (
         <div className="baner">
           <img src={baner} className="banerImage" />
@@ -165,9 +176,7 @@ function App() {
                 komt uit de secties 1.10.32 en 1.10.33 van "de Finibus Bonorum
                 et Malorum" (De uitersten van goed en kwaad) door Cicero,
                 geschreven in 45 v.Chr. Dit boek is een verhandeling over de
-                theorie der ethiek, erg populair tijdens de renaissance. De
-                eerste regel van Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                komt uit een zin in sectie 1.10.32.
+                theorie der ethiek, erg populair tijdens de renaissance.
               </div>
             </div>
           </div>
@@ -214,6 +223,23 @@ function App() {
               </a>
             </div>
             <PersonalSkills />
+          </div>
+        </div>
+      ) : null}
+
+      {strona === "aboutMe" ? (
+        <div className="aboutMe__banerBottom">
+          <div className="aboutMe__banerBottomObrazek">
+            <img src={uroda} className="aboutMe__banerBottomObrazekObrazek" />
+          </div>
+          <div className="aboutMe__banerBottomObrazek">
+            <img src={travel} className="aboutMe__banerBottomObrazekObrazek" />
+          </div>
+          <div className="aboutMe__banerBottomObrazek">
+            <img
+              src={lifestale}
+              className="aboutMe__banerBottomObrazekObrazek"
+            />
           </div>
         </div>
       ) : null}
