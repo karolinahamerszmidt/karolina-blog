@@ -250,7 +250,10 @@ function App() {
           <div className="bottomTextEmail">karolina@hamerszmidt.eu</div>
         </div>
         <div className="bottomTextKolumnaS">MASCHCRISP</div>
-        <div className="bottomTextKolumnP"></div>
+        <div className="bottomTextKolumnP">
+          <div className="bottomTextKolumnP__Text">Home</div>
+          <div className="bottomTextKolumnP__Text">About</div>
+        </div>
       </div>
 
       <div className="socialMedia">
