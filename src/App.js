@@ -18,6 +18,7 @@ import { PersonalSkills } from "./PersonalSkills";
 import uroda from "./uroda.jpg";
 import travel from "./travel.jpg";
 import lifestale from "./lifestale.jpg";
+import { SearchForm } from "./SearchForm/SearchForm";
 
 const Post = ({ tytul, data, zdjecie, onClick }) => (
   <div onClick={onClick} className="post">
@@ -223,6 +224,7 @@ function App() {
               </a>
             </div>
             <PersonalSkills />
+            <SearchForm />
           </div>
         </div>
       ) : null}
@@ -251,8 +253,18 @@ function App() {
         </div>
         <div className="bottomTextKolumnaS">MASCHCRISP</div>
         <div className="bottomTextKolumnP">
-          <div className="bottomTextKolumnP__Text">Home</div>
-          <div className="bottomTextKolumnP__Text">About</div>
+          <div
+            className="bottomTextKolumnP__Text"
+            onClick={() => ustawStrone("stronaGlowna")}
+          >
+            Home
+          </div>
+          <div
+            className="bottomTextKolumnP__Text"
+            onClick={() => ustawStrone("aboutMe")}
+          >
+            About
+          </div>
         </div>
       </div>
 
