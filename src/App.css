@@ -5,7 +5,6 @@
 }
 
 .kartkaAboutMe {
-  background-color: beige;
 }
 
 .pasek {
@@ -120,7 +119,7 @@
 }
 
 .stopka {
-  background-color: #505a5b;
+  background-color: #d8c9c5;
   height: 70px;
 }
 
@@ -154,9 +153,16 @@
   color: grey;
 }
 
+.aboutMe__banerTekstAbout {
+}
+
+.aboutMe__banerTekst {
+}
+
 .aboutMeBaner {
   height: 500px;
   display: flex;
+
 }
 
 .prawyBaner {
@@ -281,4 +287,24 @@
 
 .bottomTextKolumnP {
   width: 100%;
+}
+
+.aboutMe__banerBottom {
+  display: flex;
+  justify-content: space-between;
+  background-color: pink)
+}
+
+.aboutMe__banerBottomObrazek {
+  height: 250px;
+  width: 250px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.aboutMe__banerBottomObrazekObrazek {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
 }
