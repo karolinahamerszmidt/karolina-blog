@@ -21,6 +21,7 @@ import lifestale from "./lifestale.jpg";
 import { SearchForm } from "./SearchForm/SearchForm";
 import { Menu } from "./Menu/Menu";
 import { Beauty } from "./Beauty/Beauty";
+import { MenuMobile } from "./MenuMobile/MenuMobile";
 
 const Post = ({ tytul, data, zdjecie, onClick }) => (
   <div onClick={onClick} className="post">
@@ -44,7 +45,7 @@ function App() {
   return (
     <div className={strona === "aboutMe" ? "kartka kartkaAboutMe" : "kartka"}>
       <Menu ustawStrone={ustawStrone} />
-
+      <MenuMobile />
       <div className="logoBaner">MASHCRISP</div>
       {strona === "aboutMe" ? (
         <div className="aboutMe__banerTekstAbout">About</div>

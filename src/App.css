@@ -2,6 +2,7 @@
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 
 .kartkaAboutMe {
@@ -134,7 +135,6 @@
 .aboutMeBaner {
   height: 500px;
   display: flex;
-
 }
 
 .prawyBaner {
@@ -263,19 +263,18 @@
 }
 
 .bottomTextKolumnP > div:hover {
-  opacity: 0.5; }
+  opacity: 0.5;
+}
 
 .bottomTextKolumnP__Text {
   margin-left: 10px;
   cursor: pointer;
-
 }
-
 
 .aboutMe__banerBottom {
   display: flex;
   justify-content: space-between;
-  background-color: pink)
+  background-color: pink;
 }
 
 .aboutMe__banerBottomObrazek {
@@ -289,5 +288,4 @@
   object-fit: cover;
   height: 100%;
   width: 100%;
-
 }
