@@ -20,6 +20,7 @@ import travel from "./travel.jpg";
 import lifestale from "./lifestale.jpg";
 import { SearchForm } from "./SearchForm/SearchForm";
 import { Menu } from "./Menu/Menu";
+import { Beauty } from "./Beauty/Beauty";
 
 const Post = ({ tytul, data, zdjecie, onClick }) => (
   <div onClick={onClick} className="post">
@@ -53,12 +54,13 @@ function App() {
           Serdecznie witam na moim blogu!{" "}
         </div>
       ) : null}
-      {strona !== "aboutMe" ? (
+      {strona === "stronaGlowna" ? (
         <div className="baner">
           <img src={baner} className="banerImage" />
         </div>
       ) : null}
       <div className="padding"></div>
+      {strona === "beauty" ? <Beauty /> : null}
       <div>
         {strona === "stronaGlowna" ? (
           <div className="posty">

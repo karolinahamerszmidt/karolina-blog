@@ -18,7 +18,9 @@ export const Menu = ({ ustawStrone }) => (
     <div class="Menu__dropdown">
       <button class="Menu__dropbtn">Blog</button>
       <div class="Menu__dropdown-content">
-        <a href="#">Beauty</a>
+        <a onClick={() => ustawStrone("beauty")} href="#">
+          Beauty
+        </a>
         <a href="#">Travel</a>
         <a href="#">Lifestyle</a>
       </div>
