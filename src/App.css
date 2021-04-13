@@ -7,41 +7,6 @@
 .kartkaAboutMe {
 }
 
-.pasek {
-  background-color: #d5bbb5;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.pasek > div:hover {
-  opacity: 0.5;
-}
-
-.menu {
-  cursor: pointer;
-  margin: 7px;
-}
-
-.pasekSocialMedia {
-  margin-left: auto;
-}
-
-.pasekSocialMedia > a,
-.pasekSocialMedia > a:link,
-.pasekSocialMedia > a:visited,
-.pasekSocialMedia > a:active,
-.pasekSocialMedia > a:hover {
-  margin: 5px;
-  color: inherit;
-}
-
-.pasekSocialMedia > a:hover {
-  opacity: 0.5;
-}
-
 .logo {
   font-weight: bold;
 }

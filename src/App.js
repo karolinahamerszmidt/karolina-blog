@@ -19,6 +19,7 @@ import uroda from "./uroda.jpg";
 import travel from "./travel.jpg";
 import lifestale from "./lifestale.jpg";
 import { SearchForm } from "./SearchForm/SearchForm";
+import { Menu } from "./Menu/Menu";
 
 const Post = ({ tytul, data, zdjecie, onClick }) => (
   <div onClick={onClick} className="post">
@@ -41,33 +42,7 @@ function App() {
   const [strona, ustawStrone] = useState("stronaGlowna");
   return (
     <div className={strona === "aboutMe" ? "kartka kartkaAboutMe" : "kartka"}>
-      <div className="pasek">
-        <div className="menu" onClick={() => ustawStrone("stronaGlowna")}>
-          Home
-        </div>
-        <div className="menu" onClick={() => ustawStrone("aboutMe")}>
-          About
-        </div>
-        <div className="menu">Blog</div>
-        <div className="menu">Contact</div>
-        <div className="pasekSocialMedia">
-          <a
-            target="_blank"
-            href="https://www.youtube.com/channel/UCxWIPx8fsoJMLBCY1e4BGpA"
-          >
-            <FontAwesomeIcon icon={faYoutube} />
-          </a>
-          <a target="_blank" href="https://www.instagram.com/hamerszmidt/">
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-          <a
-            target="_blank"
-            href="https://www.facebook.com/karolina.hamerszmidt/"
-          >
-            <FontAwesomeIcon icon={faFacebook} />
-          </a>
-        </div>
-      </div>
+      <Menu ustawStrone={ustawStrone} />
 
       <div className="logoBaner">MASHCRISP</div>
       {strona === "aboutMe" ? (
