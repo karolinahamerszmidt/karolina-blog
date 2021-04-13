@@ -2,7 +2,7 @@
   "name": "karolina-blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mashcrisp.com",
+  "homepage": "https://karolinahamerszmidt.github.io/karolina-blog",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
