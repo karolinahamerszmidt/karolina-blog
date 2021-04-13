@@ -48,6 +48,7 @@ function App() {
         <div className="menu" onClick={() => ustawStrone("aboutMe")}>
           About
         </div>
+        <div className="menu">Blog</div>
         <div className="menu">Contact</div>
         <div className="pasekSocialMedia">
           <a
@@ -258,6 +259,12 @@ function App() {
             onClick={() => ustawStrone("aboutMe")}
           >
             About
+          </div>
+          <div
+            className="bottomTextKolumnP__Text"
+            onClick={() => ustawStrone("aboutMe")}
+          >
+            Blog
           </div>
         </div>
       </div>
