@@ -18,6 +18,7 @@ import { MenuMobile } from "./MenuMobile/MenuMobile";
 import { Logo } from "./Logo/Logo";
 import { Posty } from "./Posty/Posty";
 import { SecondSubPage } from "./SecondSubPage/SecondSubPage";
+import { BottomText } from "./BottomText/BottomText";
 
 const Podstrona = ({ tytul, data, zdjecie, tekst }) => (
   <div>
@@ -141,33 +142,7 @@ function App() {
         </div>
       ) : null}
 
-      <div className="bottomText">
-        <div className="bottomTextKolumnaL">
-          <div className="bottomText_sayHello"> Say hello</div>
-          <div className="bottomTextEmail">karolina@hamerszmidt.eu</div>
-        </div>
-        <div className="bottomTextKolumnaS">MASCHCRISP</div>
-        <div className="bottomTextKolumnP">
-          <div
-            className="bottomTextKolumnP__Text"
-            onClick={() => ustawStrone("stronaGlowna")}
-          >
-            Home
-          </div>
-          <div
-            className="bottomTextKolumnP__Text"
-            onClick={() => ustawStrone("aboutMe")}
-          >
-            About
-          </div>
-          <div
-            className="bottomTextKolumnP__Text"
-            onClick={() => ustawStrone("aboutMe")}
-          >
-            Blog
-          </div>
-        </div>
-      </div>
+      <BottomText ustawStrone={ustawStrone} />
 
       <div className="socialMedia">
         <FontAwesomeIcon icon={faYoutube} />

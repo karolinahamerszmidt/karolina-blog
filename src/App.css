@@ -119,39 +119,6 @@
   padding-right: 20px;
 }
 
-.bottomText {
-  display: flex;
-}
-
-.bottomTextKolumnaL {
-  width: 100%;
-}
-
-.bottomText_sayHello {
-}
-
-.bottomTextKolumnaS {
-  width: 100%;
-  text-align: center;
-  font-family: "LoveloBlack";
-  font-size: 26px;
-}
-
-.bottomTextKolumnP {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.bottomTextKolumnP > div:hover {
-  opacity: 0.5;
-}
-
-.bottomTextKolumnP__Text {
-  margin-left: 10px;
-  cursor: pointer;
-}
-
 .aboutMe__banerBottom {
   display: flex;
   justify-content: space-between;

@@ -1,0 +1,48 @@
+.BottomText {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.BottomText__KolumnaL {
+  width: 100%;
+  display: none;
+}
+
+.BottomText__sayHello {
+}
+
+.BottomText__KolumnaS {
+  width: 100%;
+  text-align: center;
+  font-family: "LoveloBlack";
+  font-size: 26px;
+}
+
+.BottomText__KolumnP {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.BottomText__KolumnP > div:hover {
+  opacity: 0.5;
+}
+
+.BottomText__KolumnP__Text {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .BottomText {
+    flex-direction: row;
+  }
+
+  .BottomText__KolumnaL {
+    display: block;
+  }
+  .BottomText__KolumnP {
+    justify-content: flex-end;
+  }
+}
