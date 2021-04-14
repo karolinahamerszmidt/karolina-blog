@@ -31,7 +31,7 @@ function App() {
   return (
     <div className={strona === "aboutMe" ? "kartka kartkaAboutMe" : "kartka"}>
       <Menu ustawStrone={ustawStrone} />
-      <MenuMobile />
+      <MenuMobile ustawStrone={ustawStrone} />
       <Logo />
       {strona === "aboutMe" ? (
         <div className="aboutMe__banerTekstAbout">About</div>

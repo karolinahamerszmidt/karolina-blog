@@ -9,11 +9,16 @@ import classNames from "classnames";
 import React, { useState } from "react";
 import "./MenuMobile.css";
 
-export const MenuMobile = () => {
+export const MenuMobile = ({ ustawStrone }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen((previousIsOpen) => !previousIsOpen);
+  };
+
+  const handleClick = (strona) => {
+    ustawStrone(strona);
+    setIsOpen(false);
   };
 
   return (
@@ -40,10 +45,25 @@ export const MenuMobile = () => {
             icon={faTimes}
           />
           <div className="MenuMobile__sidebarCategory">
-            <div className="MenuMobile__sidebarCategoryList">Home</div>
-            <div className="MenuMobile__sidebarCategoryList">About</div>
+            <div
+              onClick={() => handleClick("stronaGlowna")}
+              className="MenuMobile__sidebarCategoryList"
+            >
+              Home
+            </div>
+            <div
+              onClick={() => handleClick("aboutMe")}
+              className="MenuMobile__sidebarCategoryList"
+            >
+              About
+            </div>
             <div className="MenuMobile__sidebarCategoryList">Blog</div>
-            <div className="MenuMobile__sidebarCategoryList">Contact</div>
+            <div
+              onClick={() => handleClick("contact")}
+              className="MenuMobile__sidebarCategoryList"
+            >
+              Contact
+            </div>
           </div>
         </div>
       </div>
