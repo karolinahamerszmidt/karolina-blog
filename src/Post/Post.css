@@ -1,0 +1,34 @@
+.Post {
+  height: 600px;
+  width: 300px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.Post:hover > .Post__image {
+  opacity: 0.5;
+}
+
+.Post__image {
+  height: 400px;
+  width: 100%;
+  background-color: bisque;
+}
+
+.Post__imageOne {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.Post__tytul {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Post__data {
+  text-align: center;
+}

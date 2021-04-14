@@ -1,8 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
 import baner from "./baner_small.jpg";
-import notatki from "./notatki_small.jpg";
-import girl from "./girl_small.jpg";
 import ubrania from "./ubrania_small.jpg";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,26 +9,15 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import karolina from "./karolina_aboutme_small.jpg";
-import biuro from "./biuro_small.jpg";
-import bed from "./bed_small.jpg";
-import { PersonalSkills } from "./PersonalSkills";
 import uroda from "./uroda.jpg";
 import travel from "./travel.jpg";
 import lifestale from "./lifestale.jpg";
-import { SearchForm } from "./SearchForm/SearchForm";
 import { Menu } from "./Menu/Menu";
 import { Beauty } from "./Beauty/Beauty";
 import { MenuMobile } from "./MenuMobile/MenuMobile";
-
-const Post = ({ tytul, data, zdjecie, onClick }) => (
-  <div onClick={onClick} className="post">
-    <div className="postImage">
-      <img src={zdjecie} className="postImageOne" />
-    </div>
-    <div className="tytul">{tytul}</div>
-    <div className="data"> {data}</div>
-  </div>
-);
+import { Logo } from "./Logo/Logo";
+import { Posty } from "./Posty/Posty";
+import { SecondSubPage } from "./SecondSubPage/SecondSubPage";
 
 const Podstrona = ({ tytul, data, zdjecie, tekst }) => (
   <div>
@@ -46,7 +32,7 @@ function App() {
     <div className={strona === "aboutMe" ? "kartka kartkaAboutMe" : "kartka"}>
       <Menu ustawStrone={ustawStrone} />
       <MenuMobile />
-      <div className="logoBaner">MASHCRISP</div>
+      <Logo />
       {strona === "aboutMe" ? (
         <div className="aboutMe__banerTekstAbout">About</div>
       ) : null}
@@ -63,28 +49,7 @@ function App() {
       <div className="padding"></div>
       {strona === "beauty" ? <Beauty /> : null}
       <div>
-        {strona === "stronaGlowna" ? (
-          <div className="posty">
-            <Post
-              onClick={() => ustawStrone("post1")}
-              tytul="Wieczorki kawowe z dobra ksiazka"
-              data="9 kwietnia 2021"
-              zdjecie={ubrania}
-            />
-            <Post
-              onClick={() => ustawStrone("post2")}
-              tytul="Wieczorki herbaciane z dobra ksiazka"
-              zdjecie={girl}
-              data="7 kwietnia 2021"
-            />
-            <Post
-              onClick={() => ustawStrone("post3")}
-              tytul="Wieczorki z goraca woda i tv"
-              data="6 kwietnia 2021"
-              zdjecie={notatki}
-            />
-          </div>
-        ) : null}
+        {strona === "stronaGlowna" ? <Posty ustawStrone={ustawStrone} /> : null}
         {strona === "post1" ? (
           <Podstrona
             tytul="Wieczorki kawowe z dobra ksiazka"
@@ -157,50 +122,7 @@ function App() {
         ) : null}
       </div>
 
-      {strona === "stronaGlowna" ? (
-        <div className="drugaPodStrona">
-          <div className="drugaPodStrona__zdjecie">
-            <div className="drugaPodStrona__zdjeciePic">
-              <img src={biuro} className="drugaPodStrona__zdjeciePicPic" />
-            </div>
-            <div className="drugaPodStrona__zdjeciePic">
-              <img src={bed} className="drugaPodStrona__zdjeciePicPic" />
-            </div>
-          </div>
-          <div className="drugaPodStrona__tekst">
-            <div className="drugaPodStrona__profilePic">
-              <img src={karolina} className="drugaPodStrona__profilePicImg" />
-            </div>
-            <div className="drugaPodStrona__aboutMe">
-              <div className="drugaPodStrona__aboutMeTytul">
-                Karolina Hamerszmidt
-              </div>
-              <div className="drugaPodStrona__aboutMeTekst">
-                Proud Varsavian girl, currently living in The Netherlands
-              </div>
-            </div>
-            <div className="drugaPodStrona__socialMedia">
-              <a
-                target="_blank"
-                href="https://www.youtube.com/channel/UCxWIPx8fsoJMLBCY1e4BGpA"
-              >
-                <FontAwesomeIcon icon={faYoutube} />
-              </a>
-              <a target="_blank" href="https://www.instagram.com/hamerszmidt/">
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
-              <a
-                target="_blank"
-                href="https://www.facebook.com/karolina.hamerszmidt/"
-              >
-                <FontAwesomeIcon icon={faFacebook} />
-              </a>
-            </div>
-            <PersonalSkills />
-            <SearchForm />
-          </div>
-        </div>
-      ) : null}
+      {strona === "stronaGlowna" ? <SecondSubPage /> : null}
 
       {strona === "aboutMe" ? (
         <div className="aboutMe__banerBottom">

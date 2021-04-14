@@ -1,0 +1,79 @@
+.SecondSubPage {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.SecondSubPage__tekst {
+  background-color: white;
+  height: 100%;
+  width: 300px;
+}
+
+.SecondSubPage__zdjecie {
+  width: 100%;
+}
+
+.SecondSubPage__zdjeciePic {
+  background-color: lightblue;
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+.SecondSubPage__profilePic {
+  display: flex;
+  justify-content: center;
+}
+
+.SecondSubPage__zdjeciePicPic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.SecondSubPage__profilePicImg {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 50%;
+}
+.SecondSubPage__aboutMe {
+}
+
+.SecondSubPage__aboutMeTytul {
+  margin: 30px 25px 10px 25px;
+  font-size: 18px;
+  font-family: "Merriweather", serif;
+}
+
+.SecondSubPage__aboutMeTekst {
+  margin: 10px 25px 10px 25px;
+  font-size: 14px;
+}
+
+.SecondSubPage__socialMedia {
+  display: flex;
+  justify-content: center;
+}
+
+.SecondSubPage__socialMedia > a,
+.SecondSubPage__socialMedia > a:link,
+.SecondSubPage__socialMedia > a:visited,
+.SecondSubPage__socialMedia > a:active,
+.SecondSubPage__socialMedia > a:hover {
+  margin: 5px;
+  color: inherit;
+}
+
+.SecondSubPage__socialMedia > a:hover {
+  opacity: 0.5;
+}
+
+@media (min-width: 600px) {
+  .SecondSubPage {
+    flex-direction: row;
+  }
+  .SecondSubPage__zdjecie {
+    width: calc(100% - 300px);
+  }
+}
