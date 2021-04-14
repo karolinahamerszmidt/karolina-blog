@@ -1,0 +1,17 @@
+.BackToTop {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.BackToTop__arrow {
+}
+
+.BacktoTop_text {
+}
+
+@media (min-width: 600px) {
+  .BackToTop {
+    display: none;
+  }
+}

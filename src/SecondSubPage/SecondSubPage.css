@@ -6,7 +6,7 @@
 .SecondSubPage__tekst {
   background-color: white;
   height: 100%;
-  width: 300px;
+  width: 100%;
 }
 
 .SecondSubPage__zdjecie {
@@ -75,5 +75,9 @@
   }
   .SecondSubPage__zdjecie {
     width: calc(100% - 300px);
+  }
+
+  .SecondSubPage__tekst {
+    width: 300px;
   }
 }

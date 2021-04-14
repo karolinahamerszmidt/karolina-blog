@@ -19,6 +19,7 @@ import { Logo } from "./Logo/Logo";
 import { Posty } from "./Posty/Posty";
 import { SecondSubPage } from "./SecondSubPage/SecondSubPage";
 import { BottomText } from "./BottomText/BottomText";
+import { BackToTop } from "./BackToTop/BackToTop";
 
 const Podstrona = ({ tytul, data, zdjecie, tekst }) => (
   <div>
@@ -149,6 +150,8 @@ function App() {
         <FontAwesomeIcon icon={faInstagram} />
         <FontAwesomeIcon icon={faFacebook} />
       </div>
+
+      <BackToTop />
 
       <div className="stopka">
         <div className="copyright"> MASHCRISP. Wszelkie prawa zastrzezone</div>
