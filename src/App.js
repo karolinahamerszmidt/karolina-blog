@@ -17,6 +17,7 @@ import { SecondSubPage } from "./SecondSubPage/SecondSubPage";
 import { BottomText } from "./BottomText/BottomText";
 import { BackToTop } from "./BackToTop/BackToTop";
 import { About } from "./About/About";
+import { Contact } from "./Contact/Contact";
 
 const Podstrona = ({ tytul, data, zdjecie, tekst }) => (
   <div>
@@ -100,6 +101,8 @@ function App() {
               Lorem Ipsum."
           />
         ) : null}
+
+        {strona === "contact" ? <Contact /> : null}
 
         {strona === "aboutMe" ? <About /> : null}
       </div>
