@@ -8,10 +8,6 @@ import {
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import karolina from "./karolina_aboutme_small.jpg";
-import uroda from "./uroda.jpg";
-import travel from "./travel.jpg";
-import lifestale from "./lifestale.jpg";
 import { Menu } from "./Menu/Menu";
 import { Beauty } from "./Beauty/Beauty";
 import { MenuMobile } from "./MenuMobile/MenuMobile";
@@ -20,6 +16,7 @@ import { Posty } from "./Posty/Posty";
 import { SecondSubPage } from "./SecondSubPage/SecondSubPage";
 import { BottomText } from "./BottomText/BottomText";
 import { BackToTop } from "./BackToTop/BackToTop";
+import { About } from "./About/About";
 
 const Podstrona = ({ tytul, data, zdjecie, tekst }) => (
   <div>
@@ -104,44 +101,10 @@ function App() {
           />
         ) : null}
 
-        {strona === "aboutMe" ? (
-          <div className="aboutMeBaner">
-            <div className="lewyBaner">
-              <img className="karolinaAboutMePic" src={karolina} />
-            </div>
-            <div className="prawyBaner">
-              <div className="imieNazwiskoTekst">
-                W 2018 razem z mężem podjęłam decyzje o wyjeździe do Hamburga. W
-                ciągu ostatnich trzech lat mieszkałam w Brukseli i w Krakowie.
-                Obecnie jestem w Rotterdamie. Jestem wielką miłośniczką jogi i
-                pilatesu. Lubie odkrywać, próbować i odtwarzać ciekawe potrawy.
-                Moim marzeniem jest uczestnictwo w zajęciach jogi & pilatesu w
-                każdym mieście które odwiedzam.
-              </div>
-              <div className="imieNazwisko">Karolina Hamerszmidt</div>
-            </div>
-          </div>
-        ) : null}
+        {strona === "aboutMe" ? <About /> : null}
       </div>
 
       {strona === "stronaGlowna" ? <SecondSubPage /> : null}
-
-      {strona === "aboutMe" ? (
-        <div className="aboutMe__banerBottom">
-          <div className="aboutMe__banerBottomObrazek">
-            <img src={uroda} className="aboutMe__banerBottomObrazekObrazek" />
-          </div>
-          <div className="aboutMe__banerBottomObrazek">
-            <img src={travel} className="aboutMe__banerBottomObrazekObrazek" />
-          </div>
-          <div className="aboutMe__banerBottomObrazek">
-            <img
-              src={lifestale}
-              className="aboutMe__banerBottomObrazekObrazek"
-            />
-          </div>
-        </div>
-      ) : null}
 
       <BottomText ustawStrone={ustawStrone} />
 

@@ -1,0 +1,81 @@
+.About__baner {
+  display: flex;
+  flex-direction: column;
+}
+
+.About__prawyBaner {
+  width: 100%;
+}
+
+.About__lewyBaner {
+  height: 500px;
+  width: 100%;
+}
+
+.About__karolinaAboutMePic {
+  object-fit: cover;
+  object-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.About__imieNazwisko {
+  font-size: 14px;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.About__imieNazwiskoTekst {
+  font-size: 19px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.About__banerBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.About__banerBottomObrazek {
+  height: 250px;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.About__banerBottomObrazekObrazek {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .About__baner {
+    flex-direction: row;
+  }
+
+  .About__prawyBaner {
+    height: 500px;
+    width: 50%;
+  }
+
+  .About__lewyBaner {
+    height: 500px;
+    width: 50%;
+  }
+
+  .About__banerBottom {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .About__banerBottomObrazek {
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

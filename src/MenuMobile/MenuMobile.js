@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import React, { useState } from "react";
 import "./MenuMobile.css";
+
 export const MenuMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
 
