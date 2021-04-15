@@ -19,6 +19,7 @@ import { BackToTop } from "./BackToTop/BackToTop";
 import { About } from "./About/About";
 import { Contact } from "./Contact/Contact";
 import { Travel } from "./Travel/Travel";
+import { Lifestyle } from "./Lifestyle/Lifestyle";
 
 const Podstrona = ({ tytul, data, zdjecie, tekst }) => (
   <div>
@@ -50,6 +51,7 @@ function App() {
       <div className="padding"></div>
       {strona === "beauty" ? <Beauty /> : null}
       {strona === "travel" ? <Travel /> : null}
+      {strona === "lifestyle" ? <Lifestyle /> : null}
       <div>
         {strona === "stronaGlowna" ? <Posty ustawStrone={ustawStrone} /> : null}
         {strona === "post1" ? (

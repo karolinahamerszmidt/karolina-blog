@@ -24,7 +24,9 @@ export const Menu = ({ ustawStrone }) => (
         <a onClick={() => ustawStrone("travel")} href="#">
           Travel
         </a>
-        <a href="#">Lifestyle</a>
+        <a onClick={() => ustawStrone("lifestyle")} href="#">
+          Lifestyle
+        </a>
       </div>
     </div>
     <div className="Menu__button" onClick={() => ustawStrone("contact")}>
