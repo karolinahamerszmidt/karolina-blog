@@ -15,9 +15,9 @@ export const Menu = ({ ustawStrone }) => (
     <div className="Menu__button" onClick={() => ustawStrone("aboutMe")}>
       About
     </div>
-    <div class="Menu__dropdown">
-      <button class="Menu__dropbtn">Blog</button>
-      <div class="Menu__dropdown-content">
+    <div className="Menu__dropdown">
+      <button className="Menu__dropbtn">Blog</button>
+      <div className="Menu__dropdown-content">
         <a onClick={() => ustawStrone("beauty")} href="#">
           Beauty
         </a>
