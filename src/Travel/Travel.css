@@ -1,0 +1,46 @@
+.Travel__baner {
+  width: 100%;
+  height: 500px;
+}
+
+.Travel__banerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+  padding-bottom: 30px;
+}
+
+.Travel__banerCategory {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.Travel__banerTravel {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 36px;
+  padding-bottom: 30px;
+}
+
+.Travel__post {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.Travel__posty {
+  height: 600px;
+  width: 300px;
+  background-color: green;
+  cursor: pointer;
+}
+
+.Travel__posty > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
