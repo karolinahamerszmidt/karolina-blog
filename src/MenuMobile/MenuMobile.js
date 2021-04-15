@@ -15,6 +15,8 @@ export const MenuMobile = ({ ustawStrone }) => {
 
   const [subMenuOpened, setSubMenuOpened] = useState(undefined);
 
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
   const toggleMenu = () => {
     setIsOpen((previousIsOpen) => !previousIsOpen);
     setSubMenuOpened(undefined);
@@ -36,7 +38,27 @@ export const MenuMobile = ({ ustawStrone }) => {
             className="MenuMobile__bars"
             icon={faBars}
           />
-          <FontAwesomeIcon className="MenuMobile__search" icon={faSearch} />
+          <FontAwesomeIcon
+            className="MenuMobile__search"
+            icon={faSearch}
+            onClick={() => setIsSearchOpen(true)}
+          />
+          <div
+            className={classNames({
+              MenuMobile__searchContainer: true,
+              MenuMobile__searchContainer_active: isSearchOpen,
+            })}
+          >
+            <input
+              className="MenuMobile__searchSearch"
+              placeholder="Search..."
+            />
+            <FontAwesomeIcon
+              icon={faTimes}
+              onClick={() => setIsSearchOpen(false)}
+              className="MenuMobile__searchClose"
+            />
+          </div>
         </div>
         <div
           className={classNames({
