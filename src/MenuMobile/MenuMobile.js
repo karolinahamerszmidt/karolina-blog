@@ -1,4 +1,5 @@
 import {
+  faAngleLeft,
   faBars,
   faCross,
   faSearch,
@@ -12,13 +13,17 @@ import "./MenuMobile.css";
 export const MenuMobile = ({ ustawStrone }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const [subMenuOpened, setSubMenuOpened] = useState(undefined);
+
   const toggleMenu = () => {
     setIsOpen((previousIsOpen) => !previousIsOpen);
+    setSubMenuOpened(undefined);
   };
 
   const handleClick = (strona) => {
     ustawStrone(strona);
     setIsOpen(false);
+    setSubMenuOpened(undefined);
   };
 
   return (
@@ -57,12 +62,56 @@ export const MenuMobile = ({ ustawStrone }) => {
             >
               About
             </div>
-            <div className="MenuMobile__sidebarCategoryList">Blog</div>
+            <div
+              className="MenuMobile__sidebarCategoryList"
+              onClick={() => setSubMenuOpened("blog")}
+            >
+              Blog
+            </div>
             <div
               onClick={() => handleClick("contact")}
               className="MenuMobile__sidebarCategoryList"
             >
               Contact
+            </div>
+          </div>
+        </div>
+        <div
+          className={classNames({
+            MenuMobile__sidebarSub: true,
+            MenuMobile__sidebarSub_active: subMenuOpened !== undefined,
+          })}
+        >
+          <FontAwesomeIcon
+            onClick={toggleMenu}
+            className="MenuMobile__sidebarSubIcon"
+            icon={faTimes}
+          />
+          <div className="MenuMobile__sidebarSubCategory">
+            <div
+              onClick={() => setSubMenuOpened(undefined)}
+              className="MenuMobile__sidebarCategoryList MenuMobile__sidebarCategoryList_back"
+            >
+              <FontAwesomeIcon icon={faAngleLeft} />
+              Back
+            </div>
+            <div
+              onClick={() => handleClick("beauty")}
+              className="MenuMobile__sidebarSubCategoryList"
+            >
+              Beauty
+            </div>
+            <div
+              onClick={() => handleClick("travel")}
+              className="MenuMobile__sidebarSubCategoryList"
+            >
+              Travel
+            </div>
+            <div
+              onClick={() => handleClick("lifestyle")}
+              className="MenuMobile__sidebarSubCategoryList"
+            >
+              Lifestyle
             </div>
           </div>
         </div>

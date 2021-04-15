@@ -68,6 +68,51 @@
   font-size: 18px;
 }
 
+.MenuMobile__sidebarSub {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(100vw);
+  transition: all 0.5s;
+}
+
+.MenuMobile__sidebarSub_active {
+  transform: translateX(0);
+}
+
+.MenuMobile__sidebarSubIcon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 42px;
+}
+
+.MenuMobile__sidebarSubCategory {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.MenuMobile__sidebarSubCategoryList {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.MenuMobile__sidebarCategoryList_back {
+  color: grey;
+}
+
+.MenuMobile__sidebarCategoryList_back > svg {
+  margin-right: 5px;
+}
+
 @media (min-width: 600px) {
   .MenuMobile {
     display: none;
