@@ -124,7 +124,7 @@ function App() {
       <BackToTop />
 
       <div className="stopka">
-        <div className="copyright"> MASHCRISP. Wszelkie prawa zastrzezone</div>
+        <div className="copyright"></div>
       </div>
     </div>
   );
