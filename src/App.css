@@ -27,8 +27,17 @@
 
 .socialMedia {
   font-size: 36px;
-  color: grey;
+  color: black;
   text-align: center;
+}
+
+.socialMedia > a,
+.socialMedia > a:link,
+.socialMedia > a:visited,
+.socialMedia > a:active,
+.socialMedia > a:hover {
+  margin: 5px;
+  color: inherit;
 }
 
 .socialMedia > svg {
@@ -45,7 +54,6 @@
   text-align: right;
   padding-top: 30px;
   margin-right: 20px;
-  color: white;
 }
 
 .podstronaTytul {

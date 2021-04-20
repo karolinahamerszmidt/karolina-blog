@@ -116,9 +116,21 @@ function App() {
       <BottomText ustawStrone={ustawStrone} />
 
       <div className="socialMedia">
-        <FontAwesomeIcon icon={faYoutube} />
-        <FontAwesomeIcon icon={faInstagram} />
-        <FontAwesomeIcon icon={faFacebook} />
+        <a
+          target="_blank"
+          href="https://www.youtube.com/channel/UCxWIPx8fsoJMLBCY1e4BGpA"
+        >
+          <FontAwesomeIcon icon={faYoutube} />
+        </a>
+        <a target="_blank" href="https://www.instagram.com/hamerszmidt/">
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.facebook.com/karolina.hamerszmidt/"
+        >
+          <FontAwesomeIcon icon={faFacebook} />
+        </a>
       </div>
 
       <BackToTop />
