@@ -32,7 +32,7 @@ export const SecondSubPage = () => {
             Karolina Hamerszmidt
           </div>
           <div className="SecondSubPage__aboutMeTekst">
-            Proud Varsavian girl, currently living in The Netherlands
+            I'm a girl from Warsaw, currently living in The Netherlands
           </div>
         </div>
         <div className="SecondSubPage__socialMedia">
