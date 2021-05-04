@@ -20,6 +20,7 @@ import { About } from "./About/About";
 import { Contact } from "./Contact/Contact";
 import { Travel } from "./Travel/Travel";
 import { Lifestyle } from "./Lifestyle/Lifestyle";
+import { Shop } from "./Shop/Shop";
 
 const Podstrona = ({ tytul, data, zdjecie, tekst }) => (
   <div>
@@ -107,6 +108,8 @@ function App() {
         ) : null}
 
         {strona === "contact" ? <Contact /> : null}
+
+        {strona === "shop" ? <Shop /> : null}
 
         {strona === "aboutMe" ? <About /> : null}
       </div>

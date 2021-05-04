@@ -32,6 +32,9 @@ export const Menu = ({ ustawStrone }) => (
     <div className="Menu__button" onClick={() => ustawStrone("contact")}>
       Contact
     </div>
+    <div className="Menu__button" onClick={() => ustawStrone("shop")}>
+      Shop
+    </div>
     <div className="Menu__socialMedia">
       <a
         target="_blank"
