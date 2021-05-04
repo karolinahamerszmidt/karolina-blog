@@ -5,3 +5,34 @@
   font-size: 36px;
   margin-bottom: 30px;
 }
+
+.Shop__post {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.Shop__posty {
+  position: relative;
+  height: 600px;
+  width: 300px;
+  background-color: green;
+  cursor: pointer;
+}
+
+.Shop__posty > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transition: opacity 0.3s;
+}
+
+.Shop__posty > img:last-child {
+  opacity: 0;
+}
+
+.Shop__posty:hover > img:last-child {
+  opacity: 1;
+}
