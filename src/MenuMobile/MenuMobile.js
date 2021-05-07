@@ -96,6 +96,12 @@ export const MenuMobile = ({ ustawStrone }) => {
             >
               Contact
             </div>
+            <div
+              onClick={() => handleClick("shop")}
+              className="MenuMobile__sidebarCategoryList"
+            >
+              Shop
+            </div>
           </div>
         </div>
         <div

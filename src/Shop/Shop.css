@@ -10,17 +10,18 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
+  flex-direction: column;
 }
 
 .Shop__product {
   height: 600px;
-  width: 300px;
+  width: 100%;
 }
 
 .Shop__productImage {
   position: relative;
   height: 400px;
-  width: 300px;
+  width: 100%;
   background-color: green;
   cursor: pointer;
 }
@@ -55,4 +56,13 @@
   letter-spacing: 4px;
   font-size: 20px;
   color: grey;
+}
+
+@media (min-width: 600px) {
+  .Shop__products {
+    flex-direction: row;
+  }
+  .Shop__product {
+    width: 300px;
+  }
 }
