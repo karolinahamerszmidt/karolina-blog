@@ -21,6 +21,7 @@ import { Contact } from "./Contact/Contact";
 import { Travel } from "./Travel/Travel";
 import { Lifestyle } from "./Lifestyle/Lifestyle";
 import { Shop } from "./Shop/Shop";
+import { Product } from "./Product/Product";
 
 const Podstrona = ({ tytul, data, zdjecie, tekst }) => (
   <div>
@@ -109,9 +110,11 @@ function App() {
 
         {strona === "contact" ? <Contact /> : null}
 
-        {strona === "shop" ? <Shop /> : null}
+        {strona === "shop" ? <Shop ustawStrone={ustawStrone} /> : null}
 
         {strona === "aboutMe" ? <About /> : null}
+
+        {strona === "product" ? <Product /> : null}
       </div>
 
       {strona === "stronaGlowna" ? <SecondSubPage /> : null}
