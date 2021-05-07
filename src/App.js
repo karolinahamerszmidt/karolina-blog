@@ -22,6 +22,7 @@ import { Travel } from "./Travel/Travel";
 import { Lifestyle } from "./Lifestyle/Lifestyle";
 import { Shop } from "./Shop/Shop";
 import { Product } from "./Product/Product";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Podstrona = ({ tytul, data, zdjecie, tekst }) => (
   <div>
