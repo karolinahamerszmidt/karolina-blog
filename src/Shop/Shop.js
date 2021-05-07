@@ -17,18 +17,24 @@ export const Shop = () => (
           <img src={ring} />
           <img src={ring_model} />
         </div>
+        <div className="Shop__productTitle">Ring</div>
+        <div className="Shop__productPrice">25 euro</div>
       </div>
       <div className="Shop__product">
         <div className="Shop__productImage">
           <img src={necklace} />
           <img src={necklace_model} />
         </div>
+        <div className="Shop__productTitle">Necklace</div>
+        <div className="Shop__productPrice">35 euro</div>
       </div>
       <div className="Shop__product">
         <div className="Shop__productImage">
           <img src={earrings} />
           <img src={earrings_model} />
         </div>
+        <div className="Shop__productTitle">Earrings</div>
+        <div className="Shop__productPrice">20 euro</div>
       </div>
     </div>
   </div>
