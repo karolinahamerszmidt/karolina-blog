@@ -9,12 +9,14 @@ import earrings_six from "../earrings_six.jpg";
 import earrings_seven from "../earrings_seven.jpg";
 import { Carousel } from "react-responsive-carousel";
 import heart from "../heart.png";
+import heartRed from "../heartRed.png";
 import add from "../add.png";
 import remove from "../remove.png";
 import { faBlackberry } from "@fortawesome/free-brands-svg-icons";
 
 export const Product = () => {
   const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
+  const [isAddedtoWishListOpen, setAddedtoWishListOpen] = useState(false);
   return (
     <div className="Product">
       <div className="Product__left">
@@ -48,7 +50,11 @@ export const Product = () => {
         <div className="Product__price">20 euro</div>
         <button className="Product__button">Add to cart</button>
         <div className="Product__wishList">
-          <img className="Product__wishListHeart" src={heart} />
+          <img
+            className="Product__wishListHeart"
+            src={isAddedtoWishListOpen ? heartRed : heart}
+            onClick={() => setAddedtoWishListOpen(!isAddedtoWishListOpen)}
+          />
           <div className="Product__wishListText">Wish list</div>
         </div>
         <div className="Product__description">
