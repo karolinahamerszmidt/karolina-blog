@@ -23,6 +23,7 @@ import { Lifestyle } from "./Lifestyle/Lifestyle";
 import { Shop } from "./Shop/Shop";
 import { Product } from "./Product/Product";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { products } from "./Shop/products";
 
 const Podstrona = ({ tytul, data, zdjecie, tekst }) => (
   <div>
@@ -115,7 +116,11 @@ function App() {
 
         {strona === "aboutMe" ? <About /> : null}
 
-        {strona === "product" ? <Product /> : null}
+        {strona === "product/1" ? <Product product={products[0]} /> : null}
+
+        {strona === "product/2" ? <Product product={products[1]} /> : null}
+
+        {strona === "product/3" ? <Product product={products[2]} /> : null}
       </div>
 
       {strona === "stronaGlowna" ? <SecondSubPage /> : null}

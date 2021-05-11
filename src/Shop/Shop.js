@@ -12,7 +12,7 @@ export const Shop = ({ ustawStrone }) => (
     <div className="Shop__title">Products</div>
 
     <div className="Shop__products">
-      <div className="Shop__product" onClick={() => ustawStrone("product")}>
+      <div className="Shop__product" onClick={() => ustawStrone("product/1")}>
         <div className="Shop__productImage">
           <img src={ring} />
           <img src={ring_model} />
@@ -20,7 +20,7 @@ export const Shop = ({ ustawStrone }) => (
         <div className="Shop__productTitle">Ring</div>
         <div className="Shop__productPrice">25 euro</div>
       </div>
-      <div className="Shop__product" onClick={() => ustawStrone("product")}>
+      <div className="Shop__product" onClick={() => ustawStrone("product/2")}>
         <div className="Shop__productImage">
           <img src={necklace} />
           <img src={necklace_model} />
@@ -28,7 +28,7 @@ export const Shop = ({ ustawStrone }) => (
         <div className="Shop__productTitle">Necklace</div>
         <div className="Shop__productPrice">35 euro</div>
       </div>
-      <div className="Shop__product" onClick={() => ustawStrone("product")}>
+      <div className="Shop__product" onClick={() => ustawStrone("product/3")}>
         <div className="Shop__productImage">
           <img src={earrings} />
           <img src={earrings_model} />
