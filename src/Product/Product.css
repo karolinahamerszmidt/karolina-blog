@@ -55,21 +55,8 @@
   text-transform: uppercase;
   appearance: none;
   margin-bottom: 30px;
-}
-
-@media (min-width: 600px) {
-  .Product {
-    flex-direction: row;
-  }
-
-  .Product__left {
-    width: 50%;
-  }
-
-  .Product__right {
-    width: 50%;
-    margin-left: 15px;
-  }
+  position: sticky;
+  bottom: 0px;
 }
 
 .Product__wishList {
@@ -115,4 +102,24 @@
 .Product__line {
   border-bottom: 1px solid black;
   margin-bottom: 15px;
+}
+
+@media (min-width: 600px) {
+  .Product {
+    flex-direction: row;
+  }
+
+  .Product__left {
+    width: 50%;
+  }
+
+  .Product__right {
+    width: 50%;
+    margin-left: 15px;
+  }
+
+  .Product__button {
+    position: static;
+    bottom: unset;
+  }
 }
