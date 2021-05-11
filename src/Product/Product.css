@@ -96,7 +96,7 @@
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .Product__descriptionText {
@@ -113,4 +113,5 @@
 
 .Product__line {
   border-bottom: 1px solid black;
+  margin-bottom: 15px;
 }

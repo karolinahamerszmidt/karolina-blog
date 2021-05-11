@@ -10,9 +10,11 @@ import earrings_seven from "../earrings_seven.jpg";
 import { Carousel } from "react-responsive-carousel";
 import heart from "../heart.png";
 import add from "../add.png";
+import remove from "../remove.png";
 import { faBlackberry } from "@fortawesome/free-brands-svg-icons";
 
 export const Product = () => {
+  const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
   return (
     <div className="Product">
       <div className="Product__left">
@@ -50,10 +52,21 @@ export const Product = () => {
           <div className="Product__wishListText">Wish list</div>
         </div>
         <div className="Product__description">
-          <img className="Product__descriptionAdd" src={add} />
+          <img
+            className="Product__descriptionAdd"
+            src={isDescriptionOpen ? remove : add}
+            onClick={() => setIsDescriptionOpen(!isDescriptionOpen)}
+          />
           <div className="Product__descriptionText">Description</div>
         </div>
         <div className="Product__line" />
+        {isDescriptionOpen ? (
+          <div className="Product__descriptionTextText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            faucibus diam elit, id pulvinar justo commodo ac. Ut vitae felis
+            nulla. Suspendisse ut placerat libero, quis malesuada felis.
+          </div>
+        ) : null}
       </div>
     </div>
   );
