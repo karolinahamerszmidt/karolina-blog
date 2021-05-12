@@ -24,6 +24,7 @@ import { Shop } from "./Shop/Shop";
 import { Product } from "./Product/Product";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { products } from "./Shop/products";
+import { Basket } from "./Basket/Basket";
 
 const Podstrona = ({ tytul, data, zdjecie, tekst }) => (
   <div>

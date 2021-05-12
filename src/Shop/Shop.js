@@ -6,9 +6,29 @@ import necklace from "../necklace.jpg";
 import necklace_model from "../necklace_model.jpg";
 import earrings from "../earrings.jpg";
 import earrings_model from "../earrings_model.jpg";
+import {
+  faShoppingBag,
+  faUser,
+  faHeart,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Shop = ({ ustawStrone }) => (
   <div className="Shop">
+    <div className="Shop__icons">
+      <div className="Shop__icon">
+        <FontAwesomeIcon icon={faHeart} />
+      </div>
+      <div className="Shop__icon">
+        <FontAwesomeIcon
+          icon={faShoppingBag}
+          onClick={() => ustawStrone("Basket")}
+        />
+      </div>
+      <div className="Shop__icon">
+        <FontAwesomeIcon icon={faUser} />
+      </div>
+    </div>
     <div className="Shop__title">Products</div>
 
     <div className="Shop__products">

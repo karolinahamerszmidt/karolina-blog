@@ -66,3 +66,14 @@
     width: 300px;
   }
 }
+
+.Shop__icons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.Shop__icon {
+  font-size: 24px;
+  margin: 0 10px;
+}
