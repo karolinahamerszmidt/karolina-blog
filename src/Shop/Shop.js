@@ -22,7 +22,7 @@ export const Shop = ({ ustawStrone }) => (
       <div className="Shop__icon">
         <FontAwesomeIcon
           icon={faShoppingBag}
-          onClick={() => ustawStrone("Basket")}
+          onClick={() => ustawStrone("basket")}
         />
       </div>
       <div className="Shop__icon">

@@ -5,10 +5,18 @@ import heart from "../heart.png";
 import heartRed from "../heartRed.png";
 import add from "../add.png";
 import remove from "../remove.png";
+import { useContext } from "react";
+import { BasketContext } from "../Basket/BasketContext";
 
 export const Product = ({ product }) => {
   const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
   const [isAddedtoWishListOpen, setAddedtoWishListOpen] = useState(false);
+
+  const { setBasket } = useContext(BasketContext);
+  const handleAddtoCart = () => {
+    setBasket((previousBasket) => [...previousBasket, product]);
+  };
+
   return (
     <div className="Product">
       <div className="Product__left">
@@ -21,10 +29,11 @@ export const Product = ({ product }) => {
         </Carousel>
       </div>
       <div className="Product__right">
-        {" "}
         <div className="Product__title">{product.name}</div>
         <div className="Product__price">{product.price} euro</div>
-        <button className="Product__button">Add to cart</button>
+        <button className="Product__button" onClick={handleAddtoCart}>
+          Add to cart
+        </button>
         <div className="Product__wishList">
           <img
             className="Product__wishListHeart"

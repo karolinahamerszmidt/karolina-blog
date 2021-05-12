@@ -122,6 +122,8 @@ function App() {
         {strona === "product/2" ? <Product product={products[1]} /> : null}
 
         {strona === "product/3" ? <Product product={products[2]} /> : null}
+
+        {strona === "basket" ? <Basket /> : null}
       </div>
 
       {strona === "stronaGlowna" ? <SecondSubPage /> : null}
