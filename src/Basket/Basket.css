@@ -49,17 +49,84 @@
   height: 400px;
 }
 
+.Basket__summaryOrderTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Basket__summaryOrderLineOne {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 16px;
+}
+
+.Basket__summaryOrderShipping {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 16px;
+}
+
+.Basket__summaryOrderAddDiscountCode {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 16px;
+}
+.Basket__line {
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+}
+
+.Basket__summaryButton {
+  display: block;
+  width: 100%;
+  padding: 10px 30px;
+  background: black;
+  border: none;
+  border-radius: 0;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  appearance: none;
+  margin-bottom: 30px;
+  position: sticky;
+  bottom: 0px;
+  color: white;
+}
+
 @media (min-width: 600px) {
   .Basket__product {
     flex-direction: row;
+  }
+
+  .Basket__products {
+    width: 50%;
   }
 
   .Basket__productLeft {
     width: 50%;
   }
 
-  .Basket__productRight {
+  .Basket__productCenter {
     width: 50%;
     margin-left: 15px;
   }
+}
+
+.Basket__wrapper {
+  display: flex;
+}
+
+.Basket__summary {
+  background-color: rgb(243, 243, 245);
+  width: 50%;
 }
